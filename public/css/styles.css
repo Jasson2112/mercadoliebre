@@ -1,0 +1,308 @@
+*{
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;    
+}
+
+header{
+    background-color: #EAC926;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.logo-container{
+    width: 40%;
+    display: flex;
+}
+
+.button-search{
+    width: 40%;
+    display: flex;
+}
+
+.icono-p{
+    width: 40%;
+    display: flex;
+}
+
+header div img{
+    width: 20%;
+    display: flex;
+}
+
+.input-button{
+    display: flex;
+    width: 40%;
+}
+
+.logo-mainbody{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+
+
+.mainbody{
+    width: 90%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+p{
+    font-size: 12px;
+    text-align: center;
+    padding: 5px;
+}
+
+div.burger-menu{
+    text-align: center;
+    
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 15px;
+    height: 30px;
+    margin: 10px 0px 20px 0px;
+    padding: 7px;
+    width: 30px;
+}
+
+
+
+header nav{
+    font-size: 12px;
+    margin-left: 20px;
+    display: none;
+}
+
+
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+    padding: 5px;
+    display: block;
+    padding-bottom: 10px;
+    
+}
+
+section.banner img{
+    width: 100%;
+    padding-top: 7.3rem;
+}
+
+main section h3{
+    margin: 20px 0px;
+    font-size: 20px;
+    line-height: 1.3em;
+}
+
+main section article img{
+    width: 100%;
+}
+
+
+.icon-footer{
+    font-size: 35px;
+    color: #1259c3;;
+    background-color:white;
+    margin-bottom: 10px;
+    
+    
+}
+footer{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+p, footer{
+    margin: 0;
+    
+}
+
+h4, footer{
+    margin: 0;
+}
+
+.align-left{
+text-align: left;
+}
+
+
+div.last-visit,
+div.offers{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.price{
+    font-size: 18px;
+    width: 30%;
+}
+
+.discount{
+    width: 70%;
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+
+.description{
+    color: #666;
+    display: none;
+    margin-top: 20px;
+}
+
+article div.main-article{
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    position: relative;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    transition: all 1S;
+}
+
+
+
+main section article{
+    margin: 10px 0px;
+    background-color: #fff;    
+    transition: all 1s;
+}
+
+main section article:hover i{
+    transform: rotate(-0.25turn);
+}
+
+main section div article:hover .description{
+    display: block;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+@media (min-width: 361px){
+    
+    .LS{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    main section div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    main section div.products article{
+        width: 45%;
+    }
+
+    .price,
+    .discount{
+        width: 50%;
+    }
+}
+
+@media (min-width: 769px){
+
+    .LSP{
+        display: flex;
+        justify-content: space-between;
+    }
+    main section div.products article{
+        width: 22%;
+    }
+    header nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 95%;
+        padding: 5px;
+    }
+    
+    nav ul {
+        display: flex;
+        flex-wrap: wrap; 
+    }
+    div.burger-menu{
+        display: none;
+    }
+
+    main section div article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    
+    }
+
+    .logo-search {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    
+}
+
+@media (min-width: 1200px){
+    .footer-align{
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: space-between;
+    }
+    .footer-align div{
+        width: 30%;
+        padding-bottom: 40px;
+    }
+    
+
+}
+
+.register , .login {
+    margin: 10px;
+    padding: 10px;
+}
+
+
