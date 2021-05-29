@@ -5,7 +5,7 @@
         <title>MercadoLiebre</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
@@ -38,8 +38,9 @@
         <section class="banner">
             <img src="images/img-home-banner.jpg" alt="Banner de ofertas">
         </section>
-        <main class="register">
-            <form action="/" method="POST">
+        <main class= "mainregister">
+            <div class="register">
+            <form class="form-reglog" action="/" method="POST">
                 <input type="text" name="name" placeholder="Nombre y apellido" style="border-radius: 5px;">
                 <input type="text" name="user" placeholder="Nombre de usuario" style="border-radius: 5px;">
                 <input type="email" name="email" placeholder="E-mail" style="border-radius: 5px;">
@@ -57,31 +58,7 @@
                     <label for="sell">Vendedor</label>
                 </div>
 
-                <h4>Intereses</h4>
-                <div class="interests">
-                    <div>
-                        <input type="checkbox" name="interests" value="a" id="a">
-                        <label for="a">Electro</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="interests" value="b" id="b">
-                        <label for="b">Moda</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="interests" value="c" id="c">
-                        <label for="c">Hogar</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="interests" value="d" id="d">
-                        <label for="d">Juguetería</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="interests" value="e" id="e">
-                        <label for="e">Vida sana</label>
-                    </div>
-                </div>
-                
-                <h4>Elegí tu foto de usuario</h4>
+                     <h4>Elegí tu foto de usuario</h4>
                 <input type="file" name="avatar" style="border-radius: 5px;">
                 <br>
                 <br>
@@ -94,6 +71,7 @@
                 <br>
                 <br>
             </form>
+            </div>
         </main>
         <footer>
         </footer>
